@@ -1,0 +1,55 @@
+.overviewMain {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: unset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+
+}
+
+.overviewMain li {
+  width: 50%;
+  text-align: center;
+  float: left;
+  padding: 20px;
+  color: #010000;
+}
+
+.overviewMain p {
+   padding: 5px;
+    text-align: center;
+    color: #3c9474;
+    font-weight: bold;
+   
+}
+
+.main {
+  text-align: center;
+}
+
+.main h1 {
+  margin-bottom: 40px;
+  color: white;
+  
+}
+
+
+@media (max-width: 989px) {
+ .overviewMain {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+       padding: unset;
+
+ }
+
+ .overviewMain li {
+    width: 70%;
+ }
+}
+
+
+
+   

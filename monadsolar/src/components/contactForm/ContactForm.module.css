@@ -1,0 +1,173 @@
+.kontakt_form {
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .wrapper {
+    width: 90%;
+    border: 2px solid #439e77;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .wrapper > * {
+    padding: 1em;
+  }
+  
+  .company_info {
+      background-color: rgba(67, 158, 119, 0.5);   
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .contact {
+    background: whitesmoke;
+    border-bottom-left-radius: 4px;
+   
+    border-bottom-right-radius: 4px;
+  }
+  .contact h3 {
+    padding-left: 10px;
+  }
+  
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .contact form label {
+    display: block;
+  
+  }
+  
+  .contact form p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .contact form .full {
+    grid-column: 1 / 3;
+  }
+  
+  .btn_submit {
+    padding: 10px;
+    width: 100%;
+  }
+  .btn_submit button {
+    width: 30%;
+    align-self: flex-end;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    border: solid 1px rgba(67, 158, 119, 0.5);
+    border-radius: 4px;
+    height: 30px;
+    grid-column: 1 / 3;
+    max-width: 100%;
+  }
+  
+  .contact form textarea {
+    resize: none;
+  }
+  
+  .contact form button {
+    background: #439e77;
+  
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  .contact form button:hover,
+  .contact form button:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+  }
+  
+  @media only screen and (max-width: 1020px){
+      .company_info {
+          flex-direction: column;
+          gap: 10px;
+        height: auto;
+        text-align: center;
+      }
+  }
+      
+  
+  @media only screen and (max-width: 720px) {
+      .kontakt_form {
+        padding: 50px;
+      }
+    
+      .wrapper {
+        width: 100%;
+        display: block;
+      }
+    
+      .wrapper > * {
+        padding: 1em;
+      }
+    
+      .company_info {
+          flex-direction: column;
+          gap: 10px;
+        height: auto;
+        text-align: center;
+      }
+    
+      .contact {
+        border-radius: 0;
+      }
+    
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .contact form input,
+      .contact form textarea {
+        width: 100%;
+        max-width: 300px; /* Prilagodi maksimalnu širinu inputa i textarea */
+        margin-bottom: 10px;
+      }
+    
+      .btn_submit {
+        width: 50%;
+      }
+    
+      .btn_submit button {
+        width: 100%;
+      }
+
+      .contact form label {
+        display: block;
+      text-align: center;
+      }
+    }
+    
+  

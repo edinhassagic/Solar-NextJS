@@ -1,0 +1,98 @@
+* {
+  margin: unset;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fbfafb;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto minmax(400px, 1320px) auto;
+  height: auto;
+  gap: 10px;
+}
+
+.firstRow-all-columns {
+  grid-row: 1; /* prvi red */
+  grid-column: 1 / span 3; /* preko 3 kolone */
+}
+
+.middle {
+  grid-row: 2; /* Display routes in the second row */
+  grid-column: 2; /* Display in the middle column */
+}
+
+.thirdRow-all-columns {
+  grid-row: 3; /* Display footer in the third row */
+  grid-column: 1 / span 3; /* Span across all columns */
+}
+
+.page_not_found_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 20px;
+}
+
+.page_not_found_container h1 {
+  color: #439e77;
+}
+
+.go_back_btn {
+  text-decoration: none;
+  background-color: #6db494;
+  border: 2px solid #6db494;
+  color: white;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.go_back_btn:hover {
+  background-color: transparent;
+  color: #6db494;
+}
+
+.banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  color: #439e77;
+  font-size: 30px;
+  text-shadow: 0 2px 4px rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.banner_image {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+@media (max-width: 650px) {
+  .banner_text {
+    font-size: 20px;
+  }
+ }
+ 
